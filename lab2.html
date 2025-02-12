@@ -11,15 +11,11 @@
 <body>
 
     <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Inicio</a>
-        <a href="#news">Información</a>
-        <a href="#contact">¿Quienes somos?</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+        <a href="lab2.html" class="active">Inicio</a>
+        
       </div>
       
-      <h1>Mi pagina</h1>
+      <h1 class="centrado">Mi pagina</h1>
 
     
     <div class="mycontainer">
@@ -33,7 +29,7 @@
             </p>
 
         </div>
-        <div>
+        <div id="textou" onmouseenter="textog('textou')" onmouseleave="textop('textou')">
             <h2>Meta que quiero lograr a futuro</h2>
             <p class="justify">
                 Quiero aprender a programar y desarrollar con facilidad, ya que considero que la tecnología es el futuro y dominarla me abrirá muchas puertas. La programación me permitirá crear soluciones innovadoras, automatizar procesos y mejorar la eficiencia en distintas áreas.  
@@ -43,7 +39,7 @@
             </p>
         </div>
         
-        <div onmouseenter="showImage(this)" onmouseleave="hideImage(this)">
+        <div id="cambiar">
             <h2>Género musical favorito</h2>
             <p class="justify">
                 Me encanta la electrónica porque su energía y ritmo me motivan en cualquier momento del día. Es un género versátil que se adapta a diferentes estados de ánimo, desde la concentración hasta la relajación o la celebración.  
@@ -51,22 +47,27 @@
             <p class="justify">
                 Además, la electrónica es un campo en constante evolución, con nuevos estilos y tendencias que la hacen siempre interesante. Disfruto descubriendo DJs y productores que crean sonidos únicos e innovadores.
             </p>
-            <img src="electro.jpeg" class="hover-image" style="display:none;" alt="Imagen de Meta">
+            <input class="centrar" type="color" id="colorm">
+            <button class="color" onclick="cambiarColor('cambiar', 'colorm')">Cambiar color</button>
 
         </div>
         
-        <div>
+        <div id="cambia" onclick="cambiaImagen('cambia')">
             <h2>Algo sin lo que no podría vivir</h2>
+            <h5>(Click para revelar)</h5>
             <p class="justify">
                 No podría vivir sin la música, ya que me acompaña en todos los momentos de mi vida. Me ayuda a concentrarme cuando trabajo, a relajarme cuando lo necesito y a motivarme cuando me siento desanimado.  
             </p>
             <p class="justify">
                 La música también es una forma de expresión y una manera de conectar con diferentes emociones y experiencias. Siempre hay una canción para cada situación, y eso la convierte en algo esencial en mi día a día.
             </p>
+
         </div>
         
-        <div>
-            <h2>Un talento que poseo</h2>
+        <div id="divd" ondblclick="aviso('divd')">
+            <h2 >Un talento que poseo</h2>
+            <h5>(doble click)</h5>
+
             <p class="justify">
                 Tengo un talento especial para solucionar problemas a mi manera, lo que me permite encontrar soluciones creativas y eficientes en situaciones difíciles. Me gusta analizar los desafíos desde diferentes perspectivas y buscar la mejor alternativa.  
             </p>
@@ -75,8 +76,9 @@
             </p>
         </div>
         
-        <div>
+        <div id="teclag" tabindex="0"  onkeydown="tecla(event)">
             <h2>Mi animal favorito</h2>
+            <h5>(Click y presione la tecla g)</h5>
             <p class="justify">
                 Mi animal favorito es el gato, porque son independientes, inteligentes y tienen una personalidad única. Me encanta su capacidad para relajarse y disfrutar de los momentos tranquilos, pero también su agilidad y curiosidad.  
             </p>

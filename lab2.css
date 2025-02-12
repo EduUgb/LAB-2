@@ -17,21 +17,12 @@
     align-items: center;
   }
   
-
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
   .topnav a.active {
     background-color: #0452aa;
     color: white;
     align-items: center;
   }
-  
-  .topnav .icon {
-    display: none;
-  }
+ 
   
   div.mycontainer {
     width: 100%;
@@ -44,9 +35,10 @@
     width: 33%;
     box-sizing: border-box;
     padding: 10px;
-    margin: 5px;
+    margin: 30px;
     border-radius: 10%;
-
+    background-color: #f9f1f6;
+    box-shadow: #333;
   }
 
   .justify {
@@ -55,10 +47,62 @@
 
   body{
     align-items: center;
+    background-color: aliceblue;
+    
   }
 
-  .hover-image {
-    display: none;
-    width: 200px; /* Ajusta el tamaño de la imagen si es necesario */
-    margin-top: 10px;
+
+  .centrado {
+    text-align: center;
   }
+
+  button.color {
+    background-color: #0452aa;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  input.centrar {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+
+
+.atras {
+background-image: url("electro.jpeg");
+background-size: cover;
+}
+
+.atras p{
+  visibility: hidden;
+}
+
+.atras h2{
+  visibility: hidden;
+}
+
+.atras h5{
+  visibility: hidden;
+}
+
+.gato{
+  background-image: url("gato.jpg");
+  background-size: cover;
+}
+
+.gato p{
+  visibility: hidden;
+}
+
+.gato h2{
+  visibility: hidden;
+}
+
+.gato h5{
+  visibility: hidden;
+}
